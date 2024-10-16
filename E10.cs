@@ -1,23 +1,23 @@
 ﻿namespace MyfirstApp
 {
-        internal class Point
+         public class Point
         {
             public double X { get; }
             public double Y { get; }
 
             public Point(double x, double y)
             {
-                X = x;
-                Y = y;
+                 X = x;
+                 Y = y;
             }
         }
 
         public class LineSegment
         {
-            public Point Start { get; }
-            public Point End { get; }
-            public double Length { get; }
-            public double Angle { get; }
+            public Point Start { get; set; }
+            public Point End { get; set; }
+            public double Length { get; set; }
+            public double Angle { get; set; }
 
             public LineSegment(Point start, Point end)
             {

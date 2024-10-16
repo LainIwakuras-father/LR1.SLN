@@ -34,8 +34,16 @@ namespace MyfirstApp
             Circle circle = new(0, 0, 5);
             Console.WriteLine(circle.Info);
 
+            Point point1 = new(1,1);
+            Point point2 = new(2,2);
+            Point point3 = new(4, 2);
+            Point point4 = new(6, 0);
             Polygon polygon = new();
-            Console.WriteLine(polygon.CalculateTotalLength());
+            polygon.AddPoint(point1);
+            polygon.AddPoint(point2);
+            polygon.AddPoint(point3);
+            polygon.AddPoint(point4);
+            Console.WriteLine($"Длина ломаной линии: { polygon.CalculateTotalLength()}");
             Console.ReadKey();
 
         }
